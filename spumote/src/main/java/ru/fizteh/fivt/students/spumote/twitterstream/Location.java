@@ -1,5 +1,9 @@
 package ru.fizteh.fivt.students.spumote.twitterstream;
 
+/**
+ * Created by spumote on 17.12.15.
+ */
+
 import com.google.maps.GeoApiContext;
 import com.google.maps.GeocodingApi;
 import com.google.maps.model.Bounds;

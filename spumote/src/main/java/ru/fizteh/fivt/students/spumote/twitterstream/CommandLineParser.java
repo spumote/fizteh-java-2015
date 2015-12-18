@@ -1,5 +1,9 @@
 package ru.fizteh.fivt.students.spumote.twitterstream;
 
+/**
+ * Created by spumote on 17.12.15.
+ */
+
 import com.beust.jcommander.Parameter;
 
 public class CommandLineParser {
@@ -46,3 +50,4 @@ public class CommandLineParser {
         return help;
     }
 }
+
