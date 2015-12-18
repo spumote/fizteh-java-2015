@@ -48,7 +48,7 @@ public class BlockingQueueTest {
     public static void main(String[] args) {
         new Thread(new TakeTest(3)).start();
         new Thread(new OfferTest(4)).start();
-        new Thread(new TakeTest(9)).start();
-        new Thread(new OfferTest(8)).start();
+       // new Thread(new TakeTest(9)).start();
+        //new Thread(new OfferTest(8)).start();
     }
 }
