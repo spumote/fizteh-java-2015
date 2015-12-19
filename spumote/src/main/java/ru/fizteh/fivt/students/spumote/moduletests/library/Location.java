@@ -27,9 +27,6 @@ public class Location {
             File keyFile = new File("googlemaps.properties");
             apiKey = new Scanner(keyFile).useDelimiter("\\Z").next();
         } catch (FileNotFoundException exception) {
-            System.err.println("Can't find or read googleApiKey " + exception.toString());
-            exception.printStackTrace(System.err);
-            System.exit(1);
         }
 
         GeoApiContext context = new GeoApiContext().setApiKey(apiKey);
@@ -37,9 +34,6 @@ public class Location {
         try {
             geocodingResults = GeocodingApi.geocode(context, place).await()[0];
         } catch (Exception exception) {
-            System.err.println("Break in get geocoding: " + exception.toString());
-            exception.printStackTrace(System.err);
-            System.exit(1);
         }
 
         radius = calculateRadius();
